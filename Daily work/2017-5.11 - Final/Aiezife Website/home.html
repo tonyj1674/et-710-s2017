@@ -21,7 +21,7 @@
           <button class="menu-icon" type="button" data-toggle></button>
         </span>
         <a class="topbar-responsive-logo1" href="https://twitter.com/aiezife"><h5>AIEZIFE</h5></a>
-        <a class="topbar-responsive-logo" href="https://twitter.com/aiezife"><img src= Images/Aiezife_logo.png></a>
+    <a class="topbar-responsive-logo" href="https://twitter.com/aiezife"><center><img src= Images/Aiezife_logo.png></center></a>
       </div>
       <div id="topbar-responsive" class="topbar-responsive-links">
         <div class="top-bar-right">
@@ -36,14 +36,15 @@
         </div>
       </div>
     </nav>
-
-    <audio controls>
-      <source src="music/711.mp3">
-          Your browser does not support the audio element.
-        </audio>
-
-
     <!-- End Nav -->
+    <!-- Begin angular -->
+    <form name="formName">
+      <input ng-repeat="(variable) in variables"
+      type="text" name="{{ variable.name }}"
+      ng-model="variable.name" required />
+    </form>
+
+    <!-- End angular -->
 
     <!-- Begin Hero -->
     <div class="hero-section">
@@ -150,5 +151,6 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/angular.min.js"></script>
   </body>
 </html>
